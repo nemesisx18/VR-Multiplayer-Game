@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5754612779616502367}
   - component: {fileID: 3951314646182753286}
   - component: {fileID: 5346129352362372018}
+  - component: {fileID: 8167671823472265437}
   m_Layer: 0
   m_Name: NameTag Canvas
   m_TagString: Untagged
@@ -96,6 +97,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee97f4af2fb7de4ca498b388ebe7d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8167671823472265437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2467282440153255559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &2824695032457509079
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +124,7 @@ GameObject:
   - component: {fileID: 1210894855904970484}
   - component: {fileID: 1132602018658810024}
   - component: {fileID: 9010947263548759672}
+  - component: {fileID: 42077952367474727}
   m_Layer: 0
   m_Name: NameTag Text
   m_TagString: Untagged
@@ -176,6 +194,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Player Name
+--- !u!114 &42077952367474727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824695032457509079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &3089687474120758458
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,8 +516,10 @@ MonoBehaviour:
   - {fileID: 7377797046372302039}
   - {fileID: 4584057539661154683}
   - {fileID: 4860410835334448829}
+  - {fileID: 8167671823472265437}
   - {fileID: 5994669583352485466}
   - {fileID: 4073208896559957999}
+  - {fileID: 42077952367474727}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -504,9 +540,8 @@ MonoBehaviour:
   _body: {fileID: 4016303683729315445}
   _leftHand: {fileID: 7968868438527712079}
   _rightHand: {fileID: 7968868437795876802}
+  _nameCanvas: {fileID: 2169502959661862494}
   _name: {fileID: 9010947263548759672}
-  Name: 
-  activeRenderer: 0
 --- !u!114 &3416850883978725386
 MonoBehaviour:
   m_ObjectHideFlags: 0

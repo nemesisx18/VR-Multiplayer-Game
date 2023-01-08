@@ -11,6 +11,7 @@ public class NetworkPlayer : MonoBehaviour
     [SerializeField] private Transform _body;
     [SerializeField] private Transform _leftHand;
     [SerializeField] private Transform _rightHand;
+    [SerializeField] private Transform _nameCanvas;
     [SerializeField] private Text _name;
 
     private Transform _bodyRig;
@@ -46,6 +47,8 @@ public class NetworkPlayer : MonoBehaviour
             MapPosition(_body, _bodyRig);
             MapPosition(_leftHand, _leftHandRig);
             MapPosition(_rightHand, _rightHandRig);
+
+            _nameCanvas.position = new Vector3(_bodyRig.position.x, _nameCanvas.position.y, _bodyRig.position.z);
 
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), _leftHandAnimator);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), _rightHandAnimator);
