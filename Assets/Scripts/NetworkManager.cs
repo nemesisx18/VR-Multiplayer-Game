@@ -17,8 +17,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public List<DefaultRoom> DefaultRooms;
 
-    private const string ROOM_NAME = "Room 1";
-
     public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -50,7 +48,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         roomOptions.IsVisible = true;
         roomOptions.IsOpen = true;
 
-        PhotonNetwork.JoinOrCreateRoom(ROOM_NAME, roomOptions, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom(roomSettings.Name, roomOptions, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
