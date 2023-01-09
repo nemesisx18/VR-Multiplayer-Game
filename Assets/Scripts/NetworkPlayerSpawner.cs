@@ -10,9 +10,8 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
 
-        //int randomNumbers = Random.Range(1, 6);
-        //_spawnedPlayerPrefab = PhotonNetwork.Instantiate(PREFAB_NAME + randomNumbers, transform.position, transform.rotation);
-        _spawnedPlayerPrefab = PhotonNetwork.Instantiate("Network Player", transform.position, transform.rotation);
+        int randomNumbers = Random.Range(1, 6);
+        _spawnedPlayerPrefab = PhotonNetwork.Instantiate(PREFAB_NAME + randomNumbers, transform.position, transform.rotation);
 
         PhotonNetwork.NickName = "Player " + PhotonNetwork.CurrentRoom.PlayerCount;
     }

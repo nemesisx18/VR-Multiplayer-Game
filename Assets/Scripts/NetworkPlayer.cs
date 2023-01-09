@@ -6,13 +6,13 @@ using UnityEngine.XR;
 
 public class NetworkPlayer : MonoBehaviour
 {
-    [SerializeField] private Animator _leftHandAnimator;
-    [SerializeField] private Animator _rightHandAnimator;
+    [SerializeField] private Text _name;
     [SerializeField] private Transform _body;
     [SerializeField] private Transform _leftHand;
     [SerializeField] private Transform _rightHand;
     [SerializeField] private Transform _nameCanvas;
-    [SerializeField] private Text _name;
+    [SerializeField] private Animator _leftHandAnimator;
+    [SerializeField] private Animator _rightHandAnimator;
 
     private Transform _bodyRig;
     private Transform _leftHandRig;
