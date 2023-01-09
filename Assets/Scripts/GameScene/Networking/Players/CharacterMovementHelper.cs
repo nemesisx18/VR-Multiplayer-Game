@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using Unity.XR.CoreUtils;
+﻿using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace Assets.Scripts
+namespace VR_Multiplayer.GameScene.Networking.Players
 {
     public class CharacterMovementHelper : MonoBehaviour
     {
