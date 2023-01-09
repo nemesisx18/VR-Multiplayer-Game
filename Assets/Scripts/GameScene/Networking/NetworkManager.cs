@@ -53,8 +53,6 @@ namespace VR_Multiplayer.GameScene.Networking
 
         public void InitializeRoom(int defaultRoomIndex)
         {
-            Debug.Log("Current index:" + defaultRoomIndex);
-
             DefaultRoom roomSettings = DefaultRooms[defaultRoomIndex];
 
             PhotonNetwork.LoadLevel(roomSettings.SceneIndex);
