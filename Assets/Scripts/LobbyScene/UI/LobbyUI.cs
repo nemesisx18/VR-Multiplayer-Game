@@ -7,6 +7,8 @@ namespace VR_Multiplayer.LobbyScene.UI
     public class LobbyUI : MonoBehaviour
     {
         [SerializeField] private GameObject _buttonUI;
+
+        [SerializeField] private Button _menuButton;
         [SerializeField] private Button _connectButton;
         [SerializeField] private Button[] _roomButtons;
 
@@ -27,6 +29,7 @@ namespace VR_Multiplayer.LobbyScene.UI
 
         private void Start()
         {
+            _menuButton.onClick.AddListener(SetActiveButton);
             _connectButton.onClick.AddListener(ConnectToServer);
             SetRoomButtonListener();
         }
@@ -40,6 +43,7 @@ namespace VR_Multiplayer.LobbyScene.UI
         private void SetActiveButton()
         {
             _buttonUI.SetActive(true);
+            _menuButton.gameObject.SetActive(false);
         }
 
         private void SetRoomButtonListener()
